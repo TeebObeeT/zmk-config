@@ -9,6 +9,7 @@
 - directory for SHIELD : app/boards/shields/keychron/b1
 - build command 
 ```
+	source .venv/bin/activate	
 	cd app
 	west build -b keychron -p -- -DSHIELD=keychron_b1_ISO_ergol
 ```
