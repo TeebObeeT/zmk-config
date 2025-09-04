@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zephyr
       remote: zmkfirmware
@@ -30,5 +32,9 @@ manifest:
           - edtt
           - trusted-firmware-m
           - sof
+    - name: zmk-unicode
+      remote: urob
+      revision: v3.2.0+zmk-fixes # set to same as ZMK version above
   self:
     west-commands: scripts/west-commands.yml
+    path: config
