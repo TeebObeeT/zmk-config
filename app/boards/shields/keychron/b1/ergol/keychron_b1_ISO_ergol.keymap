@@ -491,7 +491,7 @@
         compo: compose {            
             compatible = "zmk,behavior-macro-two-param";
             label = "COMPOSE";
-            wait-ms = <80>;
+            wait-ms = <40>;
             #binding-cells = <2>; // Must be 2
             bindings = <&macro_tap &kp CLCK>
                     , <&macro_param_1to1>
@@ -541,7 +541,7 @@
         &backti     &s1                     &s2                     &s3                           &s4                     &s5                 &s6             &s7             &s8                 &s9         &s0               &underslash         &kp EQUAL           &kp BSPC 
         &kp TAB     &kp A                   &mt LC(C) C             &kp O                         &kp P                   &kp Z               &kp J           &kp SEMI        &kp D               &special    &mt LC(Y) Y       &kp BSPC               &kp LC(BSPC)            
         &caps_word  &mt LC(Q) Q             &mt LC(S) S             &mt LCTRL E                   &mt LSHFT N             &mt LC(F) F         &kp L           &mt RSHFT R    &mt RCTRL T         &kp I       &kp U             &kp RET            &kp RSHFT            &kp RET 
-        &kp LSHFT  &kp NUBS                 &mt LC(W) W             &mt LC(X) X                   &minquest               &mt LC(V) V         &kp B           &dotted         &kp H               &kp G       &comcol           &kp K                                &lm 1 LSHFT
+        &mt LSHFT CLCK  &kp NUBS            &mt LC(W) W             &mt LC(X) X                   &minquest               &mt LC(V) V         &kp B           &dotted         &kp H               &kp G       &comcol           &kp K                                &lm 1 LSHFT
         &kp LCTRL   &kp LGUI                &kp LALT                          &lt 3 SPACE                                                                                              &lm 2 LCTRL            &mo_tog 2 2       &kp LEFT    &kp UP              &kp DOWN            &kp RIGHT   
         &mo 2       &out OUT_BLE            &out OUT_24G            &out OUT_CHG                        &out OUT_CHGD 
             >;
