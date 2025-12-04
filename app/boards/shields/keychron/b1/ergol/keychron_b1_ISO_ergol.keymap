@@ -493,7 +493,7 @@
             label = "COMPOSE";
             wait-ms = <40>;
             #binding-cells = <2>; // Must be 2
-            bindings = <&macro_tap &kp CLCK>
+            bindings = <&macro_tap &kp SCROLLLOCK>
                     , <&macro_param_1to1>
                     , <&macro_tap &kp MACRO_PLACEHOLDER>
                     , <&macro_param_2to1>
