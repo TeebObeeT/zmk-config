@@ -355,7 +355,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "â";
-            bindings = <&compo LBKT Q>, <&compo LBKT LS(Q)>;
+            bindings = <&dead LBKT Q>, <&dead LBKT LS(Q)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -377,14 +377,14 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ô";
-            bindings = <&compo LBKT O>, <&compo LBKT LS(O)>;
+            bindings = <&dead LBKT O>, <&dead LBKT LS(O)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         ucir: circum_u {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "û";
-            bindings = <&compo LBKT U>, <&compo LBKT LS(U)>;
+            bindings = <&dead LBKT U>, <&dead LBKT LS(U)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         agrav: grav_a {
@@ -413,7 +413,14 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ê";
-            bindings = <&compo LBKT E>, <&compo LBKT LS(E)>;
+            bindings = <&dead LBKT E>, <&dead LBKT LS(E)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        etrem: trema_e {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "ë";
+            bindings = <&dead LS(LBKT) E>, <&dead LS(LBKT) LS(E)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -421,14 +428,14 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "î";
-            bindings = <&compo LBKT I>, <&compo LBKT LS(I)>;
+            bindings = <&dead LBKT I>, <&dead LBKT LS(I)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         itrem: trema_i {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ï";
-            bindings = <&compo LS(LBKT) I>, <&compo LS(LBKT) LS(I)>;
+            bindings = <&dead LS(LBKT) I>, <&dead LS(LBKT) LS(I)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -484,7 +491,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "—";
-            bindings = <&macro_tap &kp CLCK &kp N6 &kp N6 &kp N6>;
+            bindings = <&macro_tap &kp SCROLLLOCK &kp N6 &kp N6 &kp N6>;
             
         };
 
@@ -513,7 +520,6 @@
                     ;
         };
 
-        
 
     };
 
@@ -540,7 +546,7 @@
         &mt CLCK ESC     &kp F1                  &kp F2                  &kp F3                        &kp F4                  &kp F5              &kp F6          &kp F7          &kp F8              &kp F9      &kp F10           &kp F11             &kp F12              &kp DEL  
         &backti     &s1                     &s2                     &s3                           &s4                     &s5                 &s6             &s7             &s8                 &s9         &s0               &underslash         &kp EQUAL           &kp BSPC 
         &kp TAB     &kp A                   &mt LC(C) C             &kp O                         &kp P                   &kp Z               &kp J           &kp SEMI        &kp D               &special    &mt LC(Y) Y       &kp BSPC               &kp LC(BSPC)            
-        &caps_word  &mt LC(Q) Q             &mt LC(S) S             &mt LCTRL E                   &mt LSHFT N             &mt LC(F) F         &kp L           &mt RSHFT R    &mt RCTRL T         &kp I       &kp U             &kp RET            &kp RSHFT            &kp RET 
+        &caps_word  &mt LC(Q) Q             &mt LC(S) S             &mt LCTRL E                   &mt LSHFT N             &mt LC(F) F         &mt RGUI L           &mt RSHFT R    &mt RCTRL T         &mt RGUI I       &kp U             &kp RET            &kp RSHFT            &kp RET 
         &kp LSHFT   &kp NUBS                &mt LC(W) W             &mt LC(X) X                   &minquest               &mt LC(V) V         &kp B           &dotted         &kp H               &kp G       &comcol           &kp K                                &lm 1 LSHFT
         &kp LCTRL   &kp LGUI                &kp LALT                          &lt 3 SPACE                                                                                              &lm 2 LCTRL            &mo_tog 2 2       &kp LEFT    &kp UP              &kp DOWN            &kp RIGHT   
         &mo 2       &out OUT_BLE            &out OUT_24G            &out OUT_CHG                        &out OUT_CHGD 
@@ -553,7 +559,7 @@
         &trans      &trans                  &trans                  &trans                              &trans                  &trans              &trans                          &trans                  &trans             &trans                   &trans      &trans              &trans              &trans
         &trans      &bt_pair_0 0 0          &bt_pair_1 0 0          &bt_pair_2 0 0                      &bt_pair_3 0 0          &trans              &trans                          &trans                  &trans              &trans                  &trans      &trans              &kp C_AC_SEARCH     &trans      
         &trans      &acir                   &cced                   &oe                                 &ocir                   &trans              &trans                          &trans                  &kp N8             &kp LS(LBKT)             &ucir      &trans              &trans              
-        &trans      &agrav                  &eaig                   &egrav                              &ecir                  &trans                &kp N5                         &kp MINUS               &icir              &itrem                   &ugrav     &trans              &trans              &trans
+        &trans      &agrav                  &eaig                   &egrav                              &ecir                   &etrem                &kp N5                         &kp MINUS               &icir              &itrem                   &ugrav     &trans              &trans              &trans
         &trans      &trans                  &ae                     &trans                              &trans                  &tiret              &kp N8               &compo LS(COMMA) LS(COMMA)          &trans              &trans      &compo LBKT LS(COMMA)   &trans                                  &trans
         &trans      &trans                  &trans                         &kp N4                                                                                                                       &kp RCTRL           &trans                  &kp HOME   &kp PG_UP   &kp PG_DN    &kp END  
         //
@@ -591,5 +597,3 @@
    
 	};
 };
-
-	
